@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.container p {
+  font-size: 20px;
+}
+
 body {
   background-color: #393E46;
 }
@@ -30,14 +34,13 @@ footer {
 }
 
 .sideNavBar {
-  height: 10%;
+  height: auto;
   position: fixed;
   padding: 30px;
   top: 0;
   left: 0;
   background-color: #4ECCA3;
   overflow-x: hidden;
-  
 }
 
 .sideNavBar a {
@@ -50,4 +53,27 @@ footer {
 
 .sideNavBar a:hover {
   color: #f1f1f1;
+}
+
+#teamMembers {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #505762;
+}
+
+#teamMembers div {
+  margin: 10px;
+  padding: 20px;
+  border: solid;
+  background-color: #39463B;
+}
+
+#teamMembers div h2 {
+  font-size: 1.5em;
+  color: #4ECCA3;
+}
+
+#teamMembers div p {
+  font-size: 1em;
 }
