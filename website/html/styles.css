@@ -20,6 +20,13 @@ p {
   color: #4ECCA3;
 }
 
+ul {
+  display: table;
+  margin: 0 auto;
+  color: #4ECCA3;
+  text-align: left;
+}
+
 img {
   max-width: 200px;
   max-height: 200px;
@@ -31,6 +38,13 @@ footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
+}
+
+.diagramImgClass {
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
 }
 
 .sideNavBar {
