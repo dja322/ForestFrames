@@ -1,69 +1,57 @@
-.container {
+body {
+  margin: 0;
+  background-color: #393E46;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px auto auto;
+  grid-template-areas: 
+    "logo header"
+    "navBar mainContent"
+    "navBar footer"
+}
+
+header {
+  text-align: center;
+  grid-area: header;
+  background-color: #4ECCA3;
+  border-left: solid;
+  border-bottom: solid;
+}
+
+header hgroup h1 {
+  font-size: 3em;
+  color: #232931;
+}
+
+header hgroup p {
+  font-size: 2em;
+  color: #232931;
+}
+
+#logo {
   margin: auto;
   text-align: center;
-}
-
-.container p {
-  font-size: 20px;
-}
-
-body {
-  background-color: #393E46;
-}
-
-h1 {
-  text-shadow: 5px 0 #232931;
-  color: #4ECCA3;
-}
-h2 {
-  text-shadow: 5px 0 #232931;
-  color: #4ECCA3;
-}
-
-p {
-  color: #4ECCA3;
-}
-
-ul {
-  display: table;
-  margin: 0 auto;
-  color: #4ECCA3;
-  text-align: left;
-}
-
-img {
-  max-width: 200px;
-  max-height: 200px;
-  width: auto;
-  height: auto;
-}
-
-footer {
-  margin-top: 5%;
-  color: #EEEEEE;
-  text-align: center;
-}
-
-.diagramImgClass {
-  max-width: 500px;
-  max-height: 500px;
-  width: auto;
-  height: auto;
+  grid-area: logo;
+  max-width: 197px;
+  max-height: 197px;
+  border-right: solid;
+  border-bottom: solid;
 }
 
 .sideNavBar {
   height: auto;
-  position: fixed;
   padding: 30px;
   top: 0;
   left: 0;
   background-color: #4ECCA3;
   overflow-x: hidden;
+  grid-area: navBar;
+  border-top: solid;
+  border-right: solid;
 }
 
 .sideNavBar a {
   padding: 8px 8px 8px 8px 32px;
-  text-decoration: none;
   font-size: 25px;
   color: #232931;
   display: block;
@@ -73,25 +61,111 @@ footer {
   color: #f1f1f1;
 }
 
-#teamMembers {
+main {
+  margin: 0;
+  grid-area: mainContent;
+}
+
+.container {
+  text-align: center;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+h2 {
+  text-shadow: 5px 0 #232931;
+  color: #4ECCA3;
+}
+
+h3 {
+  color: #C0A472;
+}
+
+p {
+  color: #4ECCA3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+  color: #4ECCA3;
+  text-align: left;
+}
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 10px;
+  color: #EEEEEE;
+  text-align: center;
+  grid-area: footer;
+}
+
+.diagramImgClass {
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+#teamMembers .cards, #sponsorMembers .cards,  #mentor .cards {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   background-color: #505762;
 }
 
-#teamMembers div {
+.card {
   margin: 10px;
   padding: 20px;
   border: solid;
   background-color: #39463B;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-#teamMembers div h2 {
+.card section {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.card section h3 {
   font-size: 1.5em;
   color: #4ECCA3;
 }
 
-#teamMembers div p {
+.card section address {
   font-size: 1em;
+}
+
+.card section address h4 {
+  margin: 5px;
+  color:  #4ECCA3;
+  text-decoration: underline;
+}
+
+a {
+  color:  #4ECCA3;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.card img {
+  margin: 10px;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+.noLink {
+  text-decoration: line-through;
 }
