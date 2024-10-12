@@ -96,6 +96,25 @@ ul {
   text-align: left;
 }
 
+table {
+  display: table;
+  margin: 0 auto;
+  color: #4ECCA3;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px dashed #4ECCA3;
+}
+
+tr {
+  border-collapse: collapse;
+  border: 1px dashed #4ECCA3;
+}
+
+td {
+  border-collapse: collapse;
+  border: 1px dashed #4ECCA3;
+}
+
 footer {
   margin-top: 5%;
   margin-bottom: 10px;
