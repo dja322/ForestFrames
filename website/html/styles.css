@@ -89,7 +89,7 @@ p {
   margin-right: 10px;
 }
 
-ul {
+ul, ol {
   display: table;
   margin: 0 auto;
   color: #4ECCA3;
@@ -187,4 +187,8 @@ img {
 
 .noLink {
   text-decoration: line-through;
+}
+
+#summary p a {
+  color: #00fffc;
 }
